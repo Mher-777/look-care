@@ -1,0 +1,37 @@
+header.header
+	.container
+		.header__inner
+			.logo
+				a(href="#").logo__link
+					+icon('logo', 'logo__image')
+			nav.header__menu
+				ul.header__menu-list
+					li.header__menu-item
+						a(href="#").header__menu-link Наша клиника
+					li.header__menu-item
+						a(href="#").header__menu-link О нас
+					li.header__menu-item
+						a(href="#").header__menu-link Услуги
+					li.header__menu-item
+						a(href="#").header__menu-link Новости
+			.header__phones
+				.header__phone
+					+icon('phone', 'header__phone-icon')
+					a(href="tel:+37441303011") 041303011
+				.header__phone
+					+icon('phone', 'header__phone-icon')
+					a(href="tel:+37441303011") 041303011
+			.language
+				.language__current
+					img(src="static/images/content/flags/flag-am.png" alt="Армянскый Флаг").language__current-flag
+					+icon('arrow-down', 'language__icon')
+				ul.language__dropdown
+					li.language__dropdown-item
+						a(href="#").language__dropdown-link
+							img(src="static/images/content/flags/flag-us.png").language__dropdown-flag
+					li.language__dropdown-item
+						a(href="#").language__dropdown-link
+							img(src="static/images/content/flags/flag-ru.png").language__dropdown-flag
+					li.language__dropdown-item
+						a(href="#").language__dropdown-link
+							img(src="static/images/content/flags/flag-fr.png").language__dropdown-flag
