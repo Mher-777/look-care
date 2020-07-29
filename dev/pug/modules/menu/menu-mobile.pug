@@ -1,0 +1,52 @@
+nav.menu
+	.menu__head
+		.menu__logo
+			a(href="#").menu__logo-link
+				+icon('logo-menu', 'menu__logo-image')
+		button.hamburger.hamburger--arrowalt.is-active.js-close(type='button')
+			span.hamburger-box
+				span.hamburger-inner
+	.menu__body
+		ul.menu__list
+			li.menu__item
+				a(href="#").menu__item-link
+					+icon('hospital', 'menu__item-icon')
+					span.menu__item-text Наша клиника
+			li.menu__item
+				a(href="#").menu__item-link
+					+icon('about', 'menu__item-icon')
+					span.menu__item-text О нас
+			li.menu__item.menu__item--icon
+				a(href="#").menu__item-link
+					+icon('support', 'menu__item-icon')
+					span.menu__item-text Услиги
+					+icon('arrow-down', 'menu__item-icon--small')
+				ul.menu__dropdown
+					li.menu__dropdown-item
+						a(href="#").menu__dropdown-link Лазерная эпиляция 1
+					li.menu__dropdown-item
+						a(href="#").menu__dropdown-link Лазерная эпиляция 2
+					li.menu__dropdown-item
+						a(href="#").menu__dropdown-link Лазерная эпиляция 3
+			li.menu__item
+				a(href="#").menu__item-link
+					+icon('news', 'menu__item-icon')
+					span.menu__item-text Новости
+		.menu__info
+			a(href="#").menu__info-link
+				+icon('phone', 'menu__info-icon')
+				span.menu__info-text 041303011
+			a(href="#").menu__info-link
+				+icon('phone', 'menu__info-icon')
+				span.menu__info-text 094303029
+			a(href="#").menu__info-link
+				+icon('mail', 'menu__info-icon')
+				span.menu__info-text info@lookcare.am
+	.menu__footer
+		.menu__flags
+			a(href="#").menu__flags-link
+				img(src="static/images/content/flags/flag-us.svg").menu__flags-image
+			a(href="#").menu__flags-link
+				img(src="static/images/content/flags/flag-ru.svg").menu__flags-image
+			a(href="#").menu__flags-link
+				img(src="static/images/content/flags/flag-fr.svg").menu__flags-image

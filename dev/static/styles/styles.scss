@@ -3,12 +3,14 @@
 @import "utils/mixins";
 @import "utils/fonts";
 @import "utils/sprite";
+@import "utils/global";
 //@include sprites($spritesheet-sprites);
 
 html {
-  font-family: 'Lato', Arial, serif;
+  font-family: 'Montserrat', Arial, serif;
   font-size: 20px;
   height: 100%;
+
 }
 
 body {
@@ -17,6 +19,7 @@ body {
   text-rendering: optimizeSpeed;
   line-height: 1.5;
   color: var(--bg);
+  letter-spacing: 0.03em;
 }
 
 *,
@@ -86,6 +89,8 @@ button { outline: none; }
   display: flex;
   flex-direction: column;
   height: 100%;
+  overflow-x: hidden;
+  position: relative;
 }
 
 .content { flex: 1 0 auto; }

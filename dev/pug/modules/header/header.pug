@@ -10,8 +10,16 @@ header.header
 						a(href="#").header__menu-link Наша клиника
 					li.header__menu-item
 						a(href="#").header__menu-link О нас
-					li.header__menu-item
+					li.header__menu-item.header__menu-item--dropdown
 						a(href="#").header__menu-link Услуги
+						+icon('arrow-down', 'header__menu-icon')
+						ul.header__dropdown
+							li.header__dropdown-item
+								a(href="#").header__dropdown-link Лазерная эпиляция 1
+							li.header__dropdown-item
+								a(href="#").header__dropdown-link Лазерная эпиляция 2
+							li.header__dropdown-item
+								a(href="#").header__dropdown-link Лазерная эпиляция 3
 					li.header__menu-item
 						a(href="#").header__menu-link Новости
 			.header__phones
@@ -20,18 +28,21 @@ header.header
 					a(href="tel:+37441303011") 041303011
 				.header__phone
 					+icon('phone', 'header__phone-icon')
-					a(href="tel:+37441303011") 041303011
+					a(href="tel:+37404303029") 094303029
 			.language
 				.language__current
-					img(src="static/images/content/flags/flag-am.png" alt="Армянскый Флаг").language__current-flag
+					img(src="static/images/content/flags/flag-am.svg" alt="Армянскый Флаг").language__current-flag
 					+icon('arrow-down', 'language__icon')
 				ul.language__dropdown
 					li.language__dropdown-item
 						a(href="#").language__dropdown-link
-							img(src="static/images/content/flags/flag-us.png").language__dropdown-flag
+							img(src="static/images/content/flags/flag-us.svg").language__dropdown-flag
 					li.language__dropdown-item
 						a(href="#").language__dropdown-link
-							img(src="static/images/content/flags/flag-ru.png").language__dropdown-flag
+							img(src="static/images/content/flags/flag-ru.svg").language__dropdown-flag
 					li.language__dropdown-item
 						a(href="#").language__dropdown-link
-							img(src="static/images/content/flags/flag-fr.png").language__dropdown-flag
+							img(src="static/images/content/flags/flag-fr.svg").language__dropdown-flag
+			button.hamburger.hamburger--arrowalt.js-open(type='button')
+				span.hamburger-box
+					span.hamburger-inner
