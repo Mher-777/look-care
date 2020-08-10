@@ -1,0 +1,57 @@
+extends layout/page
+
+block variables
+	-var title = 'О нас'
+
+block content
+		include modules/banners/banner-1
+		section.about
+			.container
+				.about__top
+					h4.about__top-title Сертификаты
+					.about__slider
+						.about__slide
+							a(href="static/images/content/about/certificate-1.jpg" data-fancybox="images").about__slide-link
+								img(src="static/images/content/about/certificate-1.jpg").about__slide-image
+						.about__slide
+							a(href="static/images/content/about/certificate-2.jpg" data-fancybox="images").about__slide-link
+								img(src="static/images/content/about/certificate-2.jpg").about__slide-image
+						.about__slide
+							a(href="static/images/content/about/certificate-3.jpg" data-fancybox="images").about__slide-link
+								img(src="static/images/content/about/certificate-3.jpg").about__slide-image
+						.about__slide
+							a(href="static/images/content/about/certificate-1.jpg" data-fancybox="images").about__slide-link
+								img(src="static/images/content/about/certificate-1.jpg").about__slide-image
+						.about__slide
+							a(href="static/images/content/about/certificate-2.jpg" data-fancybox="images").about__slide-link
+								img(src="static/images/content/about/certificate-2.jpg").about__slide-image
+						.about__slide
+							a(href="static/images/content/about/certificate-3.jpg" data-fancybox="images").about__slide-link
+								img(src="static/images/content/about/certificate-3.jpg").about__slide-image
+				.about__content
+					img(src="static/images/content/about/about-image.jpg").about__image
+					p.about__text look care – современная клиника эстетической стоматологии и лазерной эпиляции. С применением передовых технологий цифровой стоматологии выполняем: Рубиновая эпиляция, Александритовая эпиляция,  Диодная эпиляция, а также Шугринг эпиляция. <br><br> Ежегодно нашу клинику посещает около 1000 пациентов из различных стран. Благодаря квалифицированной команде врачей, новому передовому цифровому оборудованию, новейшим технологиям, обеспечивающим качество, и гибкому графику работы мы можем предложить профессиональное и оперативное лечение зубов.
+					p.about__text Основным направлением нашей работы является дентальная имплантация. Все виды и методики, от простых до сложнейших, широкий выбор имплантационных систем, применение новейших 3D технологий – все это – наша повседневная работа. Но все же самое большое достижение – это команда единомышленников-врачей, которые  не покладая рук и без устали будут работать ради нашего желаемого результата – непринужденной  улыбки и слов благодарности пациента. <br>
+					p.about__text Наши врачи неоднократно проходили и продолжают ежегодно проходить различные курсы усовершенствования, участвуют на всевозможных международных конгрессах и конференциях. Одно лишь перечисление этих курсов займет не одну страницу. С  сертификатами, дипломами, похвальными грамотами, патентами на изобретения вы сможете ознакомиться, посетив клинику. <br>
+					p.about__text Другой немаловажный фактор- это умение найти общий “язык” с пациентом, как в прямом, так и переносном смысле. В клинике мы разговариваем на 6-и языках.
+		section.direction
+			.direction__bg(style="background-image: url(static/images/content/about/direction-bg.jpg)")
+				.container
+					.direction__inner
+						.direction__content
+							h2.direction__title.title.title--color-white Основные направления
+							span.direction__text Сегодня наша стоматологическая клиника предлагает практически весь спектр стоматологических услуг.
+							a(href="#").direction__link услуги
+						.direction__items
+							.direction__item
+								span.direction__item-count 1
+								sapn.direction__item-text Эстетическая стоматология -виниры, цельнокерамические и циркониевые коронки и мосты
+							.direction__item
+								span.direction__item-count 2
+								sapn.direction__item-text Полный спектр имплантологических услуг-имплантология навигационная (3D), широкий выбор имплантатов, восстановление костных и мягких тканей
+							.direction__item
+								span.direction__item-count 3
+								sapn.direction__item-text Ортопедическая стоматология — металлокерамические, цирконкерамические коронки и съемные протезы
+							.direction__item
+								span.direction__item-count 4
+								sapn.direction__item-text Хирургия полости рта — от удаления зубов до проведения малых оперативных вмешательств
