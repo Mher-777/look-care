@@ -1,0 +1,54 @@
+footer.footer
+		.container
+			.footer__main
+				.footer__col(data-aos="zoom-in")
+					h3.footer__title Lookcare
+					span.footer__text Центр предоставляет услуги, связанные с эстетической медициной.
+					.footer__socials(data-da="footer__main, 3, 1080")
+						h3.footer__title Мы в социальных сетях
+						.footer__socials-icons
+							a(href="#").footer__socials-link
+								+icon('facebook', 'footer__socials-icon')
+							a(href="#").footer__socials-link
+								+icon('instagram', 'footer__socials-icon')
+							a(href="#").footer__socials-link
+								+icon('linkedin', 'footer__socials-icon')
+							a(href="#").footer__socials-link
+								+icon('twitter', 'footer__socials-icon')
+						a(href="#" data-aos-delay="500" data-izimodal-open="#call" data-izimodal-transitionin="fadeInDown").footer__btn заказать звонок
+				.footer__col.footer__col--s-tiny(data-aos="zoom-in")
+					h3.footer__title Меню
+					ul.footer__menu
+						li.footer__menu-item
+							a(href="#").footer__menu-link О нас
+						li.footer__menu-item
+							a(href="#").footer__menu-link Новости
+						li.footer__menu-item
+							a(href="#").footer__menu-link Услиги
+						li.footer__menu-item
+							a(href="#").footer__menu-link Наша клиника
+				.footer__col.footer__col--s-small(data-aos="zoom-in")
+					h3.footer__title Контакты
+					ul.footer__list
+						li.footer__item
+							a(href="tel:+37441303011").footer__item-link
+								+icon('phone', 'footer__item-icon')
+								span.footer__item-text 041 303011
+						li.footer__item
+							a(href="#").footer__item-link
+								+icon('marker', 'footer__item-icon')
+								span.footer__item-text Хоренаци 30/3, Центральный Бизнес Центр.
+						li.footer__item
+							a(href="mailto:info@lookcare.am").footer__item-link
+								+icon('mail', 'footer__item-icon')
+								span.footer__item-text info@lookcare.am
+				.footer__col(data-aos="zoom-in")
+					h3.footer__title Новостная рассылка
+					span.footer_text Подпишитесь на нашу рассылку, чтобы получить больше бесплатных советов.
+					form(action="#").footer__newsletter
+						input(type="text" placeholder="Введите E-mail" data-inputmask="'alias': 'email'" required).footer__newsletter-input
+						button(type="submit").footer__newsletter-btn
+							.footer__newsletter-icon
+		.footer__copyright
+			.container
+				span.footer__copyright-text © 2020 Lookcare. Все права защищены.

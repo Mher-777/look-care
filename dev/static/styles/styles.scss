@@ -1,3 +1,4 @@
+@import "utils/loader";
 @import "utils/libs";
 @import "utils/vars";
 @import "utils/mixins";
@@ -88,7 +89,7 @@ button { outline: none; }
 .wrapper {
   display: flex;
   flex-direction: column;
-  height: 100%;
+  min-height: 100%;
   overflow-x: hidden;
   position: relative;
 }

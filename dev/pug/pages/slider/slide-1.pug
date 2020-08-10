@@ -3,7 +3,7 @@
 		.container
 			.slider__inner
 				.slider__content
-					h1.slider__title Здоровье - самое ценное, что есть у человека
-					a(href="#").slider__btn.btn.js-popup заказать звонок
-					a(href="#").slider__btn.btn.js-popup Рабочие часы
+					h1.slider__title(data-aos="fade-right") Здоровье - самое ценное, что есть у человека
+					a(href="#" data-aos="fade-right" data-aos-delay="500" data-izimodal-open="#call" data-izimodal-transitionin="fadeInDown").slider__btn.btn заказать звонок
+					a(href="#" data-aos="fade-right" data-aos-delay="800" data-izimodal-open="#hours" data-izimodal-transitionin="fadeInDown").slider__btn.btn Рабочие часы
 					+icon('arrow-down-double', 'slider__icon')

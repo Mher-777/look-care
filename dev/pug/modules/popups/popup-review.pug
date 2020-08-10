@@ -1,0 +1,13 @@
+#review.js-popup.popup
+	h3.popup__title Заказать звонок
+	button(data-izimodal-close="#call").popup__close
+		+icon('close', 'popup__close-icon')
+	form(action="#").popup__form
+		.js-stars.popup__review
+		label.popup__lable
+			span.popup__lable-subtitle Ваше имя (обязательное поле)
+			input(type="text" required).input.popup__input
+		label.popup__lable
+			span.popup__lable-subtitle Ваше сообщение
+			textarea.textarea.popup__input
+		button(type="submit").popup__btn отправить

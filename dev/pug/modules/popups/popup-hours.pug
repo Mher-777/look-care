@@ -1,0 +1,35 @@
+#hours.js-popup.popup
+	h3.popup__title.popup__title--border-yellow Рабочие часы
+	button(data-izimodal-close="#call").popup__close
+		+icon('close', 'popup__close-icon')
+	.popup__info
+		ul.popup__info-list
+			li.popup__info-item
+				span.popup__info-text Понедельник:
+				span.popup__info-text.popup__info-text--icon С 07:00 до 23:00
+			li.popup__info-item
+				span.popup__info-text Вторник:
+				span.popup__info-text.popup__info-text--icon С 07:00 до 23:00
+			li.popup__info-item
+				span.popup__info-text Среда:
+				span.popup__info-text.popup__info-text--icon С 07:00 до 23:00
+			li.popup__info-item
+				span.popup__info-text Четверг:
+				span.popup__info-text.popup__info-text--icon С 07:00 до 23:00
+		ul.popup__info-list
+			li.popup__info-item
+				span.popup__info-text Пятница:
+				span.popup__info-text.popup__info-text--icon С 07:00 до 23:00
+			li.popup__info-item
+				span.popup__info-text Суббота:
+				span.popup__info-text.popup__info-text--icon С 07:00 до 23:00
+			li.popup__info-item
+				span.popup__info-text Воскресенье:
+				span.popup__info-text.popup__info-text--icon С 07:00 до 21:00
+	.popup__bottom
+		address.popup__address
+			+icon('marker', 'popup__address-icon')
+			span.popup__address-text Хоренаци 30/3, Центральный Бизнес Центр.
+		address.popup__address
+			+icon('marker', 'popup__address-icon')
+			span.popup__address-text Амирян 4/2, парк плаза Центральный Бизнес Центр.

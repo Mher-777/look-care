@@ -1,0 +1,19 @@
+section.reviews
+	.container
+		.section-head
+			h2.section-title.title.reviews__title(data-aos="fade-up") Отзывы
+			.section-head__arrows.reviews__arrows
+		.reviews__slider(data-space="11", data-lessLink="Скрыть", data-moreLink="Читать дальше")
+			.reviews__slide(data-aos="zoom-in" data-aos-delay="100")
+				include ../pages/reviews/reviews-1
+			.reviews__slide(data-aos="zoom-in" data-aos-delay="300")
+				include ../pages/reviews/reviews-2
+			.reviews__slide(data-aos="zoom-in" data-aos-delay="500")
+				include ../pages/reviews/reviews-3
+			.reviews__slide
+				include ../pages/reviews/reviews-1
+			.reviews__slide
+				include ../pages/reviews/reviews-2
+			.reviews__slide
+				include ../pages/reviews/reviews-3
+		a(href="#" data-aos="zoom-in" data-izimodal-open="#review" data-izimodal-transitionin="fadeInDown").reviews__btn.btn.btn--color-yellow оставить отзыв
